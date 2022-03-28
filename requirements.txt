@@ -1,0 +1,3 @@
+flask
+pyvi
+keras==2.6.0
