@@ -1,0 +1,725 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"type": "string",
+			"metadata": "Workspace name",
+			"defaultValue": "synapse-utop"
+		},
+		"synapse-utop-WorkspaceDefaultSqlServer_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'synapse-utop-WorkspaceDefaultSqlServer'"
+		},
+		"synapse-utop-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://datalakeutop.dfs.core.windows.net"
+		}
+	},
+	"variables": {
+		"workspaceId": "[concat('Microsoft.Synapse/workspaces/', parameters('workspaceName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('workspaceName'), '/synapse-utop-WorkspaceDefaultSqlServer')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "String"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDW",
+				"typeProperties": {
+					"connectionString": "[parameters('synapse-utop-WorkspaceDefaultSqlServer_connectionString')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/synapse-utop-WorkspaceDefaultStorage')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('synapse-utop-WorkspaceDefaultStorage_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/AutoResolveIntegrationRuntime')]",
+			"type": "Microsoft.Synapse/workspaces/integrationRuntimes",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"type": "Managed",
+				"typeProperties": {
+					"computeProperties": {
+						"location": "AutoResolve",
+						"dataFlowProperties": {
+							"computeType": "General",
+							"coreCount": 8,
+							"timeToLive": 0
+						}
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/WorkspaceSystemIdentity')]",
+			"type": "Microsoft.Synapse/workspaces/credentials",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"type": "ManagedIdentity",
+				"typeProperties": {}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 1')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "loiln",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2",
+						"spark.autotune.trackingId": "a2119dc5-2133-4b2e-9565-0e28538f70b5"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"enableDebugMode": false,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/813e37e4-73d3-4513-a700-f9581423d59c/resourceGroups/utop/providers/Microsoft.Synapse/workspaces/synapse-utop/bigDataPools/loiln",
+						"name": "loiln",
+						"type": "Spark",
+						"endpoint": "https://synapse-utop.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/loiln",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "3.1",
+						"nodeCount": 10,
+						"cores": 4,
+						"memory": 28,
+						"extraHeader": null
+					},
+					"sessionKeepAliveTimeout": 30
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"metadata": {
+							"microsoft": {
+								"language": "python"
+							}
+						},
+						"source": [
+							"%%pyspark\r\n",
+							"df = spark.read.load('abfss://spacexdata@datalakeutop.dfs.core.windows.net/akajob.csv', format='csv'\r\n",
+							"## If header exists uncomment line below\r\n",
+							", header=True\r\n",
+							")\r\n",
+							"df.write.mode(\"overwrite\").saveAsTable(\"default.YourTableName\")"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": 9
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Read CSV by pandas')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "loiln",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2",
+						"spark.autotune.trackingId": "488a4b2d-3dd7-46ae-b3ad-1c42ecd2a67e"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"enableDebugMode": false,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/813e37e4-73d3-4513-a700-f9581423d59c/resourceGroups/utop/providers/Microsoft.Synapse/workspaces/synapse-utop/bigDataPools/loiln",
+						"name": "loiln",
+						"type": "Spark",
+						"endpoint": "https://synapse-utop.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/loiln",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "3.1",
+						"nodeCount": 10,
+						"cores": 4,
+						"memory": 28,
+						"extraHeader": null
+					},
+					"sessionKeepAliveTimeout": 30
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"print(\"something\")"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": 1
+					},
+					{
+						"cell_type": "markdown",
+						"metadata": {
+							"nteract": {
+								"transient": {
+									"deleting": false
+								}
+							}
+						},
+						"source": [
+							"## Read CSV by Pandas"
+						],
+						"attachments": null
+					},
+					{
+						"cell_type": "code",
+						"metadata": {
+							"jupyter": {
+								"source_hidden": false,
+								"outputs_hidden": false
+							},
+							"nteract": {
+								"transient": {
+									"deleting": false
+								}
+							}
+						},
+						"source": [
+							"import pandas\r\n",
+							"\r\n",
+							"account_name = 'datalakeutop' # fill in your primary account name \r\n",
+							"container_name = 'spacexdata' # fill in your container name \r\n",
+							"linked_service_name = 'synapse-utop-WorkspaceDefaultStorage'\r\n",
+							"\r\n",
+							"path_filename = 'akajob.csv'\r\n",
+							"\r\n",
+							"adls_path = 'abfss://%s@%s.dfs.core.windows.net/%s'\r\n",
+							"options = {'linked_service' : linked_service_name}\r\n",
+							"\r\n",
+							"filepath = adls_path % (container_name, account_name, path_filename)\r\n",
+							"print(filepath)\r\n",
+							"print(linked_service_name, '\\n')\r\n",
+							"\r\n",
+							"#read data file\r\n",
+							"df = pandas.read_csv(filepath, storage_options=options)\r\n",
+							"print(df)"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": 1
+					},
+					{
+						"cell_type": "code",
+						"metadata": {
+							"jupyter": {
+								"source_hidden": false,
+								"outputs_hidden": false
+							},
+							"nteract": {
+								"transient": {
+									"deleting": false
+								}
+							}
+						},
+						"source": [
+							""
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/loiln')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "loiln",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2",
+						"spark.autotune.trackingId": "5ba338ee-21ad-4ab4-9b6e-7ce0405b181d"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"synapse_widget": {
+						"version": "0.1"
+					},
+					"enableDebugMode": false,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/813e37e4-73d3-4513-a700-f9581423d59c/resourceGroups/utop/providers/Microsoft.Synapse/workspaces/synapse-utop/bigDataPools/loiln",
+						"name": "loiln",
+						"type": "Spark",
+						"endpoint": "https://synapse-utop.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/loiln",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "3.1",
+						"nodeCount": 10,
+						"cores": 4,
+						"memory": 28,
+						"extraHeader": null
+					},
+					"sessionKeepAliveTimeout": 30
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"metadata": {
+							"jupyter": {
+								"source_hidden": false,
+								"outputs_hidden": false
+							},
+							"nteract": {
+								"transient": {
+									"deleting": false
+								}
+							}
+						},
+						"source": [
+							"print('something')"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": 7
+					},
+					{
+						"cell_type": "code",
+						"metadata": {
+							"microsoft": {
+								"language": "python"
+							},
+							"jupyter": {
+								"outputs_hidden": false
+							}
+						},
+						"source": [
+							"%%pyspark\r\n",
+							"\r\n",
+							"account_name = 'datalakeutop' # fill in your primary account name \r\n",
+							"container_name = 'spacexdata' # fill in your container name \r\n",
+							"linked_service_name = 'synapse-utop-WorkspaceDefaultStorage'\r\n",
+							"\r\n",
+							"path_filename = 'akajob.csv'\r\n",
+							"\r\n",
+							"adls_path = 'abfss://%s@%s.dfs.core.windows.net/%s'\r\n",
+							"options = {'linked_service' : linked_service_name}\r\n",
+							"\r\n",
+							"filepath = adls_path % (container_name, account_name, path_filename)\r\n",
+							"print(filepath)\r\n",
+							"print(linked_service_name, '\\n')\r\n",
+							"\r\n",
+							"# #read data file\r\n",
+							"df = spark.read.load(filepath, format='csv')\r\n",
+							"display(df.limit(10))"
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": 8
+					},
+					{
+						"cell_type": "code",
+						"metadata": {
+							"jupyter": {
+								"source_hidden": false,
+								"outputs_hidden": false
+							},
+							"nteract": {
+								"transient": {
+									"deleting": false
+								}
+							}
+						},
+						"source": [
+							""
+						],
+						"attachments": null,
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/manhpv8')]",
+			"type": "Microsoft.Synapse/workspaces/bigDataPools",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"autoPause": {
+					"enabled": true,
+					"delayInMinutes": 15
+				},
+				"autoScale": {
+					"enabled": true,
+					"maxNodeCount": 10,
+					"minNodeCount": 3
+				},
+				"nodeCount": 10,
+				"nodeSize": "Small",
+				"nodeSizeFamily": "MemoryOptimized",
+				"sparkVersion": "3.1",
+				"isComputeIsolationEnabled": false,
+				"sessionLevelPackagesEnabled": false,
+				"annotations": []
+			},
+			"dependsOn": [],
+			"location": "southeastasia"
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/loiln')]",
+			"type": "Microsoft.Synapse/workspaces/bigDataPools",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"autoPause": {
+					"enabled": true,
+					"delayInMinutes": 15
+				},
+				"autoScale": {
+					"enabled": true,
+					"maxNodeCount": 10,
+					"minNodeCount": 3
+				},
+				"nodeCount": 10,
+				"nodeSize": "Small",
+				"nodeSizeFamily": "MemoryOptimized",
+				"sparkVersion": "3.1",
+				"isComputeIsolationEnabled": false,
+				"sessionLevelPackagesEnabled": false,
+				"annotations": []
+			},
+			"dependsOn": [],
+			"location": "southeastasia"
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/statistic')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "manhpv8",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "28g",
+					"driverCores": 4,
+					"executorMemory": "28g",
+					"executorCores": 4,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2",
+						"spark.autotune.trackingId": "1f5a2648-32dc-4bf1-ba36-a6c293378014"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"enableDebugMode": false,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/813e37e4-73d3-4513-a700-f9581423d59c/resourceGroups/utop/providers/Microsoft.Synapse/workspaces/synapse-utop/bigDataPools/manhpv8",
+						"name": "manhpv8",
+						"type": "Spark",
+						"endpoint": "https://synapse-utop.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/manhpv8",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "3.1",
+						"nodeCount": 10,
+						"cores": 4,
+						"memory": 28,
+						"automaticScaleJobs": false
+					},
+					"sessionKeepAliveTimeout": 30
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"metadata": {},
+						"source": [
+							"from xmlrpc.client import Boolean\n",
+							"import numpy as np\n",
+							"import json\n",
+							"import warnings\n",
+							"import pandas as pd\n",
+							"\n",
+							"import argparse\n",
+							"\n",
+							"import time\n",
+							"warnings.filterwarnings(\"ignore\")\n",
+							"\n",
+							"def extract_num_record(df: pd.DataFrame, file_name: str, column_name: str):\n",
+							"    \n",
+							"    output = []\n",
+							"\n",
+							"    df = df[df[column_name].isna() == False]\n",
+							"\n",
+							"    # Extract year and month\n",
+							"    df['year'] = pd.DatetimeIndex(df[column_name]).year\n",
+							"    df['year'] = df['year'].apply(lambda x: str(int(x)))\n",
+							"    df['month'] = pd.DatetimeIndex(df[column_name]).month\n",
+							"    df['month'] = df['month'].apply(lambda x: str(int(x)))\n",
+							"\n",
+							"    # Merge year_month values\n",
+							"    dict_year_month = df[[\"year\", \"month\"]].apply(\"-\".join, axis=1).value_counts().to_dict()\n",
+							"    uni_years = df['year'].unique()\n",
+							"   \n",
+							"    for year in uni_years:\n",
+							"        temp = [file_name, year]\n",
+							"        for month in range(1,13):\n",
+							"            year_month = \"-\".join((str(year), str(month)))\n",
+							"            year_month_count = 0\n",
+							"\n",
+							"            if year_month in dict_year_month:\n",
+							"                year_month_count = dict_year_month[year_month]\n",
+							"\n",
+							"            temp.append(year_month_count)\n",
+							"        output.append(temp)\n",
+							"    \n",
+							"    return  output\n",
+							"\n",
+							" ## employee datasets\n",
+							"def extract_employee(emp_df: pd.DataFrame, file_name: str):\n",
+							"\n",
+							"    output = []\n",
+							"    current_year = time.strftime(\"%Y\")\n",
+							"    current_month = time.strftime(\"%m\")\n",
+							"    output = [file_name, current_year]\n",
+							"\n",
+							"    for month in range(1,13):\n",
+							"        if month == int(current_month):\n",
+							"            output.append(len(emp_df))\n",
+							"        else:\n",
+							"            output.append(0)\n",
+							"    return output\n",
+							"\n",
+							"## tms datasetsd    \n",
+							"def extract_tms(df: pd.DataFrame, file_name: str, columns = None):\n",
+							"\n",
+							"    output = []\n",
+							"\n",
+							"    year = file_name.split(\"_\")[1]\n",
+							"    output = [file_name, year]\n",
+							"\n",
+							"    df = df[columns]\n",
+							"    list_count_notzero = df[df > 0].count().tolist()\n",
+							"    \n",
+							"    output.extend(list_count_notzero)\n",
+							"    return output\n",
+							"\n",
+							"def read_csv(folder = None, file_name = None, p_filename = None):\n",
+							"    if p_filename == None:\n",
+							"        path= folder + file_name + '.csv'\n",
+							"        df = pd.read_csv(path)\n",
+							"    else:\n",
+							"         df = pd.read_csv(p_filename)\n",
+							"    return df\n",
+							"\n",
+							"\n",
+							"\n",
+							"if __name__ == '__main__':\n",
+							"    \n",
+							"    # setup column name dataframe\n",
+							"    months =  [month for month in range(1, 13)]\n",
+							"    col_infor = ['data', 'year']\n",
+							"    columns =col_infor +  months\n",
+							"\n",
+							"    #Initialize parse\n",
+							"    parser = argparse.ArgumentParser(description=\"Optional app description\")\n",
+							"    # Add Arguments\n",
+							"    parser.add_argument(\"--folder\", type=str, default=\"data/\")\n",
+							"    parser.add_argument(\"--path_config\", type=str, default=\"config/extract_columns.json\")\n",
+							"    parser.add_argument(\"--save_report_to\", type=str, default=\"report/output.csv\")\n",
+							"    \n",
+							"    parser.add_argument(\"--path_file\", type=str, default=None)\n",
+							"    parser.add_argument(\"--colname\", type=str, default=None)\n",
+							"    parser.add_argument(\"--all\", type=bool, default= False)\n",
+							"    \n",
+							"    # Parse\n",
+							"    args = parser.parse_args()\n",
+							"    #declare\n",
+							"    folder = args.folder\n",
+							"    path_config = args.path_config\n",
+							"    save_report_to = args.save_report_to\n",
+							"    path_file = args.path_file\n",
+							"    colname = args.colname\n",
+							"    # get filename and key date be extracted\n",
+							"    with open(path_config, encoding ='utf-8') as f:\n",
+							"        columns_config= json.load(f)\n",
+							"    \n",
+							"\n",
+							"    if path_file != None:\n",
+							"        outputs = []\n",
+							"        df = read_csv(p_filename = path_file)\n",
+							"        filename = path_file\n",
+							"        if colname == \"list\":\n",
+							"            colname = columns_config[\"list_columns\"]\n",
+							"            # tms datasets  \n",
+							"            if len(colname) > 0:\n",
+							"                output = extract_tms(df, filename, colname)\n",
+							"            # employee datasets   \n",
+							"            elif len(colname) == 0:\n",
+							"                output = extract_employee(df, filename)\n",
+							"            outputs.append(output)\n",
+							"        \n",
+							"        # common datasets\n",
+							"        elif colname != \"list\":\n",
+							"            output = extract_num_record(df, filename, colname)\n",
+							"            outputs.extend(output)\n",
+							"        df = pd.DataFrame(outputs, columns = columns)\n",
+							"        print(df)\n",
+							"\n",
+							"   \n",
+							"    if args.all == True:\n",
+							"       \n",
+							"\n",
+							"        print(\"START EXTRACT!!!\")\n",
+							"        outputs = []\n",
+							"        for col_data in columns_config:\n",
+							"            \n",
+							"            filename = col_data\n",
+							"            colname = columns_config[col_data]\n",
+							"            df = read_csv(folder, filename)\n",
+							"            \n",
+							"            output = []\n",
+							"            if type(colname) == list:\n",
+							"                # tms datasets  \n",
+							"                if len(colname) > 0:\n",
+							"                    output = extract_tms(df, filename, colname)\n",
+							"                # employee datasets   \n",
+							"                elif len(colname) == 0:\n",
+							"                    output = extract_employee(df, filename)\n",
+							"                outputs.append(output)\n",
+							"            \n",
+							"            # common datasets\n",
+							"            elif type(colname) == str:\n",
+							"                output = extract_num_record(df, filename, colname)\n",
+							"                outputs.extend(output)\n",
+							"\n",
+							"\n",
+							"            df = pd.DataFrame(outputs, columns = columns)\n",
+							"        print(\"FINISH EXTRACT!!!\")\n",
+							"        ## save file statistic\n",
+							"        df.to_csv(save_report_to, index= False)\n",
+							"        print(\"SAVE DONE!!!\")"
+						],
+						"outputs": [],
+						"execution_count": 1
+					}
+				]
+			},
+			"dependsOn": []
+		}
+	]
+}
