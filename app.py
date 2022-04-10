@@ -4,6 +4,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import one_hot
 import numpy as np
 from unittest import result
+
 from flask import Flask, request, jsonify, render_template
 
 VOCABSIZE =  30000
