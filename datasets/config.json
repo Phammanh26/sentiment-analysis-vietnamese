@@ -1,8 +1,8 @@
 {
-    "folder-datasets": "/datasets/test_v1",
+    "folder-datasets": "/datasets/origin_data",
     "test": "test.csv",
     "train": "train.csv",
-    "vocabsize": 5000
+    "vocabsize": 30000
 
 }
 
