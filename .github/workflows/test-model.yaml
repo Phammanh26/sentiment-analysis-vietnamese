@@ -2,6 +2,9 @@ name: "testing model"
 on:
   push:
       branches: [master, main]
+env:
+  ## Sets environment variable
+  WANDB_API_KEY: fc1542f3a0e1a28443bb60c22a543b41fa8f6528
 jobs:
   Test-Model:
     runs-on: ubuntu-latest
