@@ -1,0 +1,24 @@
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/datasets/test_v1)... Done. 0.0s
+2022-04-10 23:23:15.667699: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-04-10 23:23:15.669941: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "test/test_model.py", line 72, in <module>
+    test_training_model(x_train,y_train, parameters)
+  File "test/test_model.py", line 28, in test_training_model
+    model.train(x_train, y_train,  wandb_callback=WandbCallback())
+  File "/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/model_building/CNN.py", line 46, in train
+    self.model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=epochs,batch_size=batch_size, callbacks =[wandb_callback])
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/wandb/integration/keras/keras.py", line 168, in new_v2
+    return old_v2(*args, **kwargs)
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/keras/engine/training.py", line 1050, in fit
+    data_handler = data_adapter.DataHandler(
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/keras/engine/data_adapter.py", line 1099, in __init__
+    adapter_cls = select_data_adapter(x, y)
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/keras/engine/data_adapter.py", line 961, in select_data_adapter
+    raise ValueError(
+ValueError: Failed to find data adapter that can handle input: <class 'numpy.ndarray'>, (<class 'list'> containing values of types {"<class 'int'>"})
+start processing list text, size: 3000
+finish processing list text, size: 3000
+start processing list text, size: 1000
+finish processing list text, size: 1000

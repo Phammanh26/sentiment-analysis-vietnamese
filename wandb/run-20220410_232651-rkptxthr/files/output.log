@@ -1,0 +1,195 @@
+
+start processing list text, size: 23168
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/datasets/origin_data)... Done. 0.0s
+finish processing list text, size: 23168
+start processing list text, size: 57826
+finish processing list text, size: 57826
+2022-04-10 23:27:08.010187: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-04-10 23:27:08.010397: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-04-10 23:27:08.265000: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+WARNING:tensorflow:Model was constructed with shape (None, 256) for input KerasTensor(type_spec=TensorSpec(shape=(None, 256), dtype=tf.float32, name='embedding_input'), name='embedding_input', description="created by layer 'embedding_input'"), but it was called on an input with incompatible shape (None, 128).
+Epoch 1/10
+WARNING:tensorflow:Model was constructed with shape (None, 256) for input KerasTensor(type_spec=TensorSpec(shape=(None, 256), dtype=tf.float32, name='embedding_input'), name='embedding_input', description="created by layer 'embedding_input'"), but it was called on an input with incompatible shape (None, 128).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38/39 [============================>.] - ETA: 2s - loss: 0.6477 - acc: 0.6160
+
+39/39 [==============================] - 90s 2s/step - loss: 0.6452 - acc: 0.6191 - val_loss: 0.4847 - val_acc: 0.7787
+Epoch 2/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+39/39 [==============================] - 87s 2s/step - loss: 0.4407 - acc: 0.8021 - val_loss: 0.4222 - val_acc: 0.8062
+Epoch 3/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+39/39 [==============================] - 78s 2s/step - loss: 0.3706 - acc: 0.8412 - val_loss: 0.4200 - val_acc: 0.8084
+Epoch 4/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+39/39 [==============================] - 76s 2s/step - loss: 0.3322 - acc: 0.8613 - val_loss: 0.4461 - val_acc: 0.8073
+Epoch 5/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+15/39 [==========>...................] - ETA: 46s - loss: 0.2956 - acc: 0.8814
+Traceback (most recent call last):
+  File "test/test_model.py", line 72, in <module>
+    test_training_model(x_train,y_train, parameters)
+  File "test/test_model.py", line 28, in test_training_model
+    model.train(x_train, y_train,  wandb_callback=WandbCallback())
+  File "/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/model_building/CNN.py", line 46, in train
+    self.model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=epochs,batch_size=batch_size, callbacks =[wandb_callback])
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/wandb/integration/keras/keras.py", line 168, in new_v2
+    return old_v2(*args, **kwargs)
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/keras/engine/training.py", line 1100, in fit
+    tmp_logs = self.train_function(iterator)
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/eager/def_function.py", line 828, in __call__
+    result = self._call(*args, **kwds)
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/eager/def_function.py", line 855, in _call
+    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 2942, in __call__
+    return graph_function._call_flat(
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 1918, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/eager/function.py", line 555, in call
+    outputs = execute.execute(
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/tensorflow/python/eager/execute.py", line 59, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+KeyboardInterrupt

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "test/test_model.py", line 54, in <module>
+    dataset = MakeDataset(config, run)
+  File "/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/processing_data/MakeDataset.py", line 23, in __init__
+    artifact = wandb.Artifact('datasets-testing', type='my_dataset')
+AttributeError: 'Run' object has no attribute 'Artifact'

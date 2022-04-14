@@ -1,0 +1,117 @@
+
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/datasets/test_v2)... Done. 0.0s
+start processing list text, size: 10000
+finish processing list text, size: 10000
+2022-04-10 22:24:02.640628: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-04-10 22:24:02.642726: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+start processing list text, size: 10000
+finish processing list text, size: 10000
+2022-04-10 22:24:03.002604: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+WARNING:tensorflow:Model was constructed with shape (None, 256) for input KerasTensor(type_spec=TensorSpec(shape=(None, 256), dtype=tf.float32, name='embedding_input'), name='embedding_input', description="created by layer 'embedding_input'"), but it was called on an input with incompatible shape (1000, 128).
+WARNING:tensorflow:Model was constructed with shape (None, 256) for input KerasTensor(type_spec=TensorSpec(shape=(None, 256), dtype=tf.float32, name='embedding_input'), name='embedding_input', description="created by layer 'embedding_input'"), but it was called on an input with incompatible shape (1000, 128).
+Epoch 1/10
+
+
+
+
+
+
+
+
+ 9/10 [==========================>...] - ETA: 2s - loss: 0.2886 - acc: 0.9403
+
+10/10 [==============================] - 29s 3s/step - loss: 0.2552 - acc: 0.9477 - val_loss: 3.4958e-08 - val_acc: 1.0000
+Epoch 2/10
+
+
+
+
+
+
+
+
+10/10 [==============================] - 24s 2s/step - loss: 2.6196e-08 - acc: 1.0000 - val_loss: 2.3144e-09 - val_acc: 1.0000
+Epoch 3/10
+
+
+
+
+
+
+
+
+
+10/10 [==============================] - 31s 3s/step - loss: 2.8734e-09 - acc: 1.0000 - val_loss: 9.4025e-10 - val_acc: 1.0000
+Epoch 4/10
+
+
+
+
+
+
+
+
+
+10/10 [==============================] - 25s 2s/step - loss: 1.4095e-09 - acc: 1.0000 - val_loss: 6.6753e-10 - val_acc: 1.0000
+Epoch 5/10
+
+
+
+
+
+
+
+
+10/10 [==============================] - 23s 2s/step - loss: 1.0772e-09 - acc: 1.0000 - val_loss: 5.8486e-10 - val_acc: 1.0000
+Epoch 6/10
+
+
+
+
+
+
+
+
+10/10 [==============================] - 23s 2s/step - loss: 9.6096e-10 - acc: 1.0000 - val_loss: 5.5595e-10 - val_acc: 1.0000
+Epoch 7/10
+
+
+
+
+
+
+
+
+
+10/10 [==============================] - 26s 3s/step - loss: 9.3746e-10 - acc: 1.0000 - val_loss: 5.4533e-10 - val_acc: 1.0000
+Epoch 8/10
+
+
+
+
+
+
+
+10/10 [==============================] - 23s 2s/step - loss: 9.0400e-10 - acc: 1.0000 - val_loss: 5.4135e-10 - val_acc: 1.0000
+Epoch 9/10
+
+
+
+
+
+
+
+10/10 [==============================] - 22s 2s/step - loss: 8.8382e-10 - acc: 1.0000 - val_loss: 5.3984e-10 - val_acc: 1.0000
+Epoch 10/10
+
+
+
+
+
+
+
+
+
+
+10/10 [==============================] - 29s 3s/step - loss: 8.5782e-10 - acc: 1.0000 - val_loss: 5.3923e-10 - val_acc: 1.0000

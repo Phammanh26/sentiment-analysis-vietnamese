@@ -1,0 +1,1 @@
+{"test.csv:vocabsize": 9694, "test.csv:negative": 3000, "test.csv:positive": 0, "test.csv:lenght": 3000, "_timestamp": 1649607601, "_runtime": 6, "_step": 1, "train.csv:vocabsize": 5062, "train.csv:negative": 1000, "train.csv:positive": 0, "train.csv:lenght": 1000, "_wandb": {"runtime": 6}}

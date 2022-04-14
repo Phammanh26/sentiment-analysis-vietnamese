@@ -1,0 +1,13 @@
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/datasets/test_v1)... Done. 0.0s
+Traceback (most recent call last):
+  File "test/test_model.py", line 70, in <module>
+    test_training_model(x_train,y_train )
+  File "test/test_model.py", line 34, in test_training_model
+    model.setup_model()
+  File "/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/model_building/CNN.py", line 23, in setup_model
+    input_dim = self.parameters['vocabsize']
+KeyError: 'vocabsize'
+start processing list text, size: 3000
+finish processing list text, size: 3000
+start processing list text, size: 1000
+finish processing list text, size: 1000

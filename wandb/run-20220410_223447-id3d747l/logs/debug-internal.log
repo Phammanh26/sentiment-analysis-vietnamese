@@ -1,0 +1,370 @@
+2022-04-10 22:34:48,884 INFO    MainThread:5242 [internal.py:wandb_internal():92] W&B internal server running at pid: 5242, started at: 2022-04-10 22:34:48.884173
+2022-04-10 22:34:48,885 INFO    WriterThread:5242 [datastore.py:open_for_write():77] open: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/run-id3d747l.wandb
+2022-04-10 22:34:48,886 DEBUG   SenderThread:5242 [sender.py:send():235] send: header
+2022-04-10 22:34:48,886 DEBUG   SenderThread:5242 [sender.py:send():235] send: run
+2022-04-10 22:34:49,294 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: check_version
+2022-04-10 22:34:49,295 INFO    SenderThread:5242 [dir_watcher.py:__init__():169] watching files in: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files
+2022-04-10 22:34:49,295 INFO    SenderThread:5242 [sender.py:_start_run_threads():812] run started: id3d747l with start time 1649604887
+2022-04-10 22:34:49,296 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:34:49,296 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:34:49,296 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: check_version
+2022-04-10 22:34:49,635 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: run_start
+2022-04-10 22:34:50,386 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:34:51,364 DEBUG   HandlerThread:5242 [meta.py:__init__():37] meta init
+2022-04-10 22:34:51,364 DEBUG   HandlerThread:5242 [meta.py:__init__():51] meta init done
+2022-04-10 22:34:51,364 DEBUG   HandlerThread:5242 [meta.py:probe():211] probe
+2022-04-10 22:34:51,365 DEBUG   HandlerThread:5242 [meta.py:_setup_git():201] setup git
+2022-04-10 22:34:51,408 DEBUG   HandlerThread:5242 [meta.py:_setup_git():208] setup git done
+2022-04-10 22:34:51,409 DEBUG   HandlerThread:5242 [meta.py:_save_pip():55] save pip
+2022-04-10 22:34:51,409 DEBUG   HandlerThread:5242 [meta.py:_save_pip():69] save pip done
+2022-04-10 22:34:51,409 DEBUG   HandlerThread:5242 [meta.py:_save_conda():76] save conda
+2022-04-10 22:34:52,400 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/requirements.txt
+2022-04-10 22:34:52,400 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/conda-environment.yaml
+2022-04-10 22:34:53,405 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/conda-environment.yaml
+2022-04-10 22:34:53,438 DEBUG   HandlerThread:5242 [meta.py:_save_conda():86] save conda done
+2022-04-10 22:34:53,438 DEBUG   HandlerThread:5242 [meta.py:probe():249] probe done
+2022-04-10 22:34:53,443 DEBUG   SenderThread:5242 [sender.py:send():235] send: files
+2022-04-10 22:34:53,443 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-04-10 22:34:53,448 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 22:34:53,448 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 22:34:53,774 DEBUG   SenderThread:5242 [sender.py:send():235] send: telemetry
+2022-04-10 22:34:53,786 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: log_artifact
+2022-04-10 22:34:53,787 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: log_artifact
+2022-04-10 22:34:53,953 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:34:54,390 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:34:54,407 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:34:54,407 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-metadata.json
+2022-04-10 22:34:54,541 INFO    Thread-11 :5242 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmpn36e5okmwandb/2shz63um-wandb-metadata.json
+2022-04-10 22:34:54,665 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: get_summary
+2022-04-10 22:34:54,666 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:34:56,416 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:34:56,594 INFO    Thread-13 :5242 [upload_job.py:push():95] Uploaded file /Users/phamvanmanh/.cache/wandb/artifacts/obj/md5/57/1f20066acbb837898df006c59696d9
+2022-04-10 22:34:56,599 INFO    Thread-14 :5242 [upload_job.py:push():95] Uploaded file /Users/phamvanmanh/.cache/wandb/artifacts/obj/md5/ee/f4dc1a14a318589452156deea43e5d
+2022-04-10 22:34:58,111 INFO    SenderThread:5242 [sender.py:send_request_log_artifact():1002] logged artifact datasets-testing - {'id': 'QXJ0aWZhY3Q6MTEyNDc2Mzk1', 'digest': '0488f576b0bc109e8defe39675a5e7f4', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE4MzYzMDk0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTEyNDc0MDgz', 'versionIndex': 1}}, 'version': 'latest'}
+2022-04-10 22:34:58,111 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:34:58,111 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:34:58,112 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:34:58,112 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:34:58,112 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:34:58,112 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:34:58,112 DEBUG   SenderThread:5242 [sender.py:send():235] send: telemetry
+2022-04-10 22:34:58,113 DEBUG   SenderThread:5242 [sender.py:send():235] send: telemetry
+2022-04-10 22:34:58,113 DEBUG   SenderThread:5242 [sender.py:send():235] send: files
+2022-04-10 22:34:58,113 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file model-best.h5 with policy live
+2022-04-10 22:34:58,113 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:34:58,113 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:34:58,113 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:34:58,424 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:34:58,425 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:34:58,477 DEBUG   SenderThread:5242 [sender.py:send():235] send: files
+2022-04-10 22:34:58,477 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file media/graph/graph_summary_930c409532d880e3620f.graph.json with policy now
+2022-04-10 22:34:58,479 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:34:58,481 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:34:59,430 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:34:59,431 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/media/graph/graph_summary_930c409532d880e3620f.graph.json
+2022-04-10 22:34:59,431 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/media/graph
+2022-04-10 22:34:59,431 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/media
+2022-04-10 22:34:59,616 INFO    Thread-15 :5242 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmpn36e5okmwandb/2cvsizoo-media/graph/graph_summary_930c409532d880e3620f.graph.json
+2022-04-10 22:35:00,437 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:01,157 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:01,158 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:01,166 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:01,173 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:01,179 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:01,179 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:01,179 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:01,179 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:01,180 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:01,441 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:01,442 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:04,019 INFO    Thread-16 :5242 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmpn36e5okmwandb/3d8huum6-model-best.h5
+2022-04-10 22:35:04,460 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:05,269 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:05,269 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:05,270 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:05,270 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:05,271 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:05,271 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:05,271 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:05,271 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:05,271 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:05,466 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:05,466 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:06,472 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:08,486 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:08,776 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 22:35:08,776 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 22:35:08,986 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:08,986 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:09,116 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:09,116 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:09,117 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:09,118 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:09,118 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:09,118 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:09,119 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:09,490 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:09,491 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:10,498 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:12,522 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:13,027 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:13,027 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:13,029 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:13,029 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:13,030 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:13,030 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:13,030 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:13,030 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:13,031 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:13,528 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:13,528 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:13,529 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:15,540 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:16,792 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:16,793 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:16,795 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:16,796 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:16,796 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:16,797 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:16,797 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:16,797 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:16,797 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:17,551 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:17,551 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:17,551 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:19,563 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:20,342 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:20,342 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:20,343 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:20,343 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:20,344 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:20,344 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:20,344 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:20,344 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:20,344 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:20,569 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:20,569 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/config.yaml
+2022-04-10 22:35:20,569 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:20,609 DEBUG   SenderThread:5242 [sender.py:send():235] send: stats
+2022-04-10 22:35:21,575 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:23,437 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:23,437 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:23,438 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:23,438 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:23,440 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:23,440 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:23,441 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:23,441 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:23,441 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:23,582 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:23,583 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:23,583 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:24,124 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 22:35:24,125 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 22:35:25,594 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:26,478 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:26,479 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:26,479 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:26,479 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:26,480 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:26,480 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:26,480 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:26,480 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:26,480 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:26,599 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:26,600 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:27,605 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:29,559 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:29,560 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:29,561 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:29,561 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:29,561 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:29,562 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:29,562 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:29,562 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:29,562 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:29,610 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:29,610 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:29,611 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:31,621 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:32,705 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:32,707 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 22:35:32,708 DEBUG   SenderThread:5242 [sender.py:send():235] send: history
+2022-04-10 22:35:32,708 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:32,708 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:32,709 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:32,709 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:32,709 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:32,709 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:32,750 DEBUG   SenderThread:5242 [sender.py:send():235] send: telemetry
+2022-04-10 22:35:33,631 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:33,631 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:33,631 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5
+2022-04-10 22:35:35,367 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:35,368 DEBUG   SenderThread:5242 [sender.py:send():235] send: exit
+2022-04-10 22:35:35,368 INFO    SenderThread:5242 [sender.py:send_exit():371] handling exit code: 0
+2022-04-10 22:35:35,381 INFO    SenderThread:5242 [sender.py:send_exit():373] handling runtime: 45
+2022-04-10 22:35:35,383 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:35,383 INFO    SenderThread:5242 [sender.py:send_exit():379] send defer
+2022-04-10 22:35:35,384 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:35,385 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:35,386 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 0
+2022-04-10 22:35:35,386 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:35,386 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-04-10 22:35:35,386 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 1
+2022-04-10 22:35:35,387 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:35,387 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 1
+2022-04-10 22:35:35,400 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:35,400 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-04-10 22:35:35,401 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 2
+2022-04-10 22:35:35,401 DEBUG   SenderThread:5242 [sender.py:send():235] send: stats
+2022-04-10 22:35:35,405 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:35,406 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 2
+2022-04-10 22:35:35,406 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:35,406 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-04-10 22:35:35,406 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 3
+2022-04-10 22:35:35,406 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:35,407 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 3
+2022-04-10 22:35:35,417 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:35,417 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-04-10 22:35:35,417 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 4
+2022-04-10 22:35:35,418 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:35,418 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 4
+2022-04-10 22:35:35,418 DEBUG   SenderThread:5242 [sender.py:send():235] send: summary
+2022-04-10 22:35:35,420 INFO    SenderThread:5242 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 22:35:35,420 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:35,420 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-04-10 22:35:35,420 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 5
+2022-04-10 22:35:35,421 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:35,421 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 5
+2022-04-10 22:35:35,421 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:35,421 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-04-10 22:35:35,493 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:35,643 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:35,643 INFO    Thread-7  :5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:35,917 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 6
+2022-04-10 22:35:35,918 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:35,918 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:35,918 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 6
+2022-04-10 22:35:35,919 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:35,919 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-04-10 22:35:35,919 INFO    SenderThread:5242 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-04-10 22:35:36,026 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:36,648 INFO    SenderThread:5242 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/config.yaml
+2022-04-10 22:35:36,650 INFO    SenderThread:5242 [dir_watcher.py:finish():313] scan: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files
+2022-04-10 22:35:36,650 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/requirements.txt requirements.txt
+2022-04-10 22:35:36,650 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log output.log
+2022-04-10 22:35:36,651 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/config.yaml config.yaml
+2022-04-10 22:35:36,661 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json wandb-summary.json
+2022-04-10 22:35:36,667 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/conda-environment.yaml conda-environment.yaml
+2022-04-10 22:35:36,668 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-metadata.json wandb-metadata.json
+2022-04-10 22:35:36,671 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/model-best.h5 model-best.h5
+2022-04-10 22:35:36,683 INFO    SenderThread:5242 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/media/graph/graph_summary_930c409532d880e3620f.graph.json media/graph/graph_summary_930c409532d880e3620f.graph.json
+2022-04-10 22:35:36,683 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 7
+2022-04-10 22:35:36,684 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:36,684 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:36,684 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 7
+2022-04-10 22:35:36,684 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:36,684 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-04-10 22:35:36,685 INFO    SenderThread:5242 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-10 22:35:36,790 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:36,790 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:36,994 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:36,994 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,100 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,100 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,203 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,204 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,309 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,310 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,416 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,416 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,522 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,522 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,630 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,631 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,665 INFO    Thread-17 :5242 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/requirements.txt
+2022-04-10 22:35:37,740 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,741 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,849 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,850 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,873 INFO    Thread-21 :5242 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/conda-environment.yaml
+2022-04-10 22:35:37,873 INFO    Thread-20 :5242 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/wandb-summary.json
+2022-04-10 22:35:37,958 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:37,959 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:37,977 INFO    Thread-18 :5242 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/output.log
+2022-04-10 22:35:37,977 INFO    Thread-19 :5242 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/files/config.yaml
+2022-04-10 22:35:38,067 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,068 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,176 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,177 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,283 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,284 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,391 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,392 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,502 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,503 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,610 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,611 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,720 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,721 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,826 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,827 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:38,936 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:38,937 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,042 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,043 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,146 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,146 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,254 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,255 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,363 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,364 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,470 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,471 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,578 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,579 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,685 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,686 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,793 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,794 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:39,900 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:39,901 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:40,007 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:40,008 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:40,037 INFO    Thread-22 :5242 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmpn36e5okmwandb/12f1yerj-model-best.h5
+2022-04-10 22:35:40,117 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:40,118 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:40,227 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:40,228 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:40,241 INFO    Thread-6  :5242 [sender.py:transition_state():392] send defer: 8
+2022-04-10 22:35:40,241 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:40,242 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 8
+2022-04-10 22:35:40,242 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:40,242 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-04-10 22:35:40,336 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:40,486 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 9
+2022-04-10 22:35:40,487 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:40,488 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:40,489 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 9
+2022-04-10 22:35:40,489 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:40,489 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-04-10 22:35:40,490 INFO    SenderThread:5242 [sender.py:transition_state():392] send defer: 10
+2022-04-10 22:35:40,490 DEBUG   SenderThread:5242 [sender.py:send():235] send: final
+2022-04-10 22:35:40,491 DEBUG   SenderThread:5242 [sender.py:send():235] send: footer
+2022-04-10 22:35:40,491 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 22:35:40,491 INFO    HandlerThread:5242 [handler.py:handle_request_defer():164] handle defer: 10
+2022-04-10 22:35:40,492 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: defer
+2022-04-10 22:35:40,492 INFO    SenderThread:5242 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-04-10 22:35:40,597 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 22:35:40,598 DEBUG   SenderThread:5242 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 22:35:40,598 INFO    SenderThread:5242 [file_pusher.py:join():150] waiting for file pusher
+2022-04-10 22:35:41,170 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: sampled_history
+2022-04-10 22:35:41,175 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: get_summary
+2022-04-10 22:35:41,176 DEBUG   HandlerThread:5242 [handler.py:handle_request():141] handle_request: shutdown
+2022-04-10 22:35:41,176 INFO    HandlerThread:5242 [handler.py:finish():790] shutting down handler
+2022-04-10 22:35:41,496 INFO    WriterThread:5242 [datastore.py:close():281] close: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_223447-id3d747l/run-id3d747l.wandb
+2022-04-10 22:35:42,071 INFO    SenderThread:5242 [sender.py:finish():1107] shutting down sender
+2022-04-10 22:35:42,072 INFO    SenderThread:5242 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-10 22:35:42,072 INFO    SenderThread:5242 [file_pusher.py:join():150] waiting for file pusher
+2022-04-10 22:35:42,074 INFO    MainThread:5242 [internal.py:handle_exit():82] Internal process exited

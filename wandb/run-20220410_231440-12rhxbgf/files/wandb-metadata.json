@@ -1,0 +1,22 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.5",
+    "heartbeatAt": "2022-04-10T16:14:44.225100",
+    "startedAt": "2022-04-10T16:14:40.540900",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "test/test_model.py",
+    "codePath": "test/test_model.py",
+    "git": {
+        "remote": "https://github.com/Phammanh26/sentiment-analysis-vietnamese.git",
+        "commit": "b1b3aebf0939a46fe2c80abb362fdb8b08c7c6bf"
+    },
+    "email": "pvm26042000@gmail.com",
+    "root": "/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese",
+    "host": "Phams-MacBook-Pro.local",
+    "username": "phamvanmanh",
+    "executable": "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/bin/python"
+}

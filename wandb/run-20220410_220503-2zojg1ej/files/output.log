@@ -1,0 +1,5 @@
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/phamvanmanh/sentiment-analysis-vietnamese/datasets/test_data)... Done. 0.0s
+Traceback (most recent call last):
+  File "test/evelute-model.py", line 70, in <module>
+    make_dataset = MakeDataset.MakeDataset()
+NameError: name 'MakeDataset' is not defined

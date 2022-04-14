@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "test/test_model.py", line 53, in <module>
+    artifact.add_dir(f_datasets)
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 391, in add_dir
+    raise ValueError("Path is not a directory: %s" % local_path)
+ValueError: Path is not a directory: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/datasets/test

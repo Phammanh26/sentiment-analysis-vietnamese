@@ -1,0 +1,1 @@
+{"train:vocabsize": 5062, "train:negative": 0, "train:positive": 0, "train:lenght": 1000, "_timestamp": 1649603463, "_runtime": 7, "_step": 1, "test:vocabsize": 9694, "test:negative": 0, "test:positive": 0, "test:lenght": 3000, "_wandb": {"runtime": 7}}

@@ -1,0 +1,9 @@
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/datasets/test_v1)... Done. 0.0s
+Traceback (most recent call last):
+  File "test/test_model.py", line 59, in <module>
+    dataset_dict = dataset.make(parameters['max_lenght'])
+  File "/Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/processing_data/MakeDataset.py", line 44, in make
+    resutls[type] =  [np.ndarray(new_x_embed), np.ndarray(new_y)]
+ValueError: maximum supported dimension for an ndarray is 32, found 3000
+start processing list text, size: 3000
+finish processing list text, size: 3000

@@ -1,0 +1,11 @@
+[34m[1mwandb[39m[22m: Adding directory to artifact (/Users/phamvanmanh/sentiment-analysis-vietnamese/datasets/test_data)... Done. 0.0s
+Traceback (most recent call last):
+  File "test/test_model.py", line 76, in <module>
+    test_training_model()
+  File "test/test_model.py", line 32, in test_training_model
+    model = CNN(wandb)
+TypeError: 'module' object is not callable
+start processing list text, size: 1000
+finish processing list text, size: 1000
+start processing list text, size: 3000
+finish processing list text, size: 3000

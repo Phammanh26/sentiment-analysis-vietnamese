@@ -1,0 +1,489 @@
+2022-04-10 23:26:52,473 INFO    MainThread:6800 [internal.py:wandb_internal():92] W&B internal server running at pid: 6800, started at: 2022-04-10 23:26:52.473126
+2022-04-10 23:26:52,474 INFO    WriterThread:6800 [datastore.py:open_for_write():77] open: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/run-rkptxthr.wandb
+2022-04-10 23:26:52,475 DEBUG   SenderThread:6800 [sender.py:send():235] send: header
+2022-04-10 23:26:52,475 DEBUG   SenderThread:6800 [sender.py:send():235] send: run
+2022-04-10 23:26:52,824 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: check_version
+2022-04-10 23:26:52,832 INFO    SenderThread:6800 [dir_watcher.py:__init__():169] watching files in: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files
+2022-04-10 23:26:52,832 INFO    SenderThread:6800 [sender.py:_start_run_threads():812] run started: rkptxthr with start time 1649608011
+2022-04-10 23:26:52,832 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:26:52,833 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:26:52,833 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: check_version
+2022-04-10 23:26:53,170 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: run_start
+2022-04-10 23:26:53,838 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:26:54,595 DEBUG   HandlerThread:6800 [meta.py:__init__():37] meta init
+2022-04-10 23:26:54,595 DEBUG   HandlerThread:6800 [meta.py:__init__():51] meta init done
+2022-04-10 23:26:54,595 DEBUG   HandlerThread:6800 [meta.py:probe():211] probe
+2022-04-10 23:26:54,596 DEBUG   HandlerThread:6800 [meta.py:_setup_git():201] setup git
+2022-04-10 23:26:54,638 DEBUG   HandlerThread:6800 [meta.py:_setup_git():208] setup git done
+2022-04-10 23:26:54,639 DEBUG   HandlerThread:6800 [meta.py:_save_pip():55] save pip
+2022-04-10 23:26:54,639 DEBUG   HandlerThread:6800 [meta.py:_save_pip():69] save pip done
+2022-04-10 23:26:54,639 DEBUG   HandlerThread:6800 [meta.py:_save_conda():76] save conda
+2022-04-10 23:26:54,842 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/requirements.txt
+2022-04-10 23:26:54,843 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/conda-environment.yaml
+2022-04-10 23:26:56,589 DEBUG   HandlerThread:6800 [meta.py:_save_conda():86] save conda done
+2022-04-10 23:26:56,589 DEBUG   HandlerThread:6800 [meta.py:probe():249] probe done
+2022-04-10 23:26:56,593 DEBUG   SenderThread:6800 [sender.py:send():235] send: files
+2022-04-10 23:26:56,593 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-04-10 23:26:56,597 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:26:56,597 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:26:56,851 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/conda-environment.yaml
+2022-04-10 23:26:56,852 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:26:56,852 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-metadata.json
+2022-04-10 23:26:56,902 DEBUG   SenderThread:6800 [sender.py:send():235] send: telemetry
+2022-04-10 23:26:56,944 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: log_artifact
+2022-04-10 23:26:56,945 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: log_artifact
+2022-04-10 23:26:57,262 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:26:57,355 INFO    Thread-11 :6800 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmp8gj6ghy6wandb/24i7x7vv-wandb-metadata.json
+2022-04-10 23:26:58,858 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:00,865 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:00,922 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:27:01,552 INFO    Thread-13 :6800 [upload_job.py:push():95] Uploaded file /Users/phamvanmanh/.cache/wandb/artifacts/obj/md5/69/f2fd004f58be29bcec922d0fe32d6a
+2022-04-10 23:27:02,348 INFO    Thread-14 :6800 [upload_job.py:push():95] Uploaded file /Users/phamvanmanh/.cache/wandb/artifacts/obj/md5/c6/69862e0bd22ebabd0634798b052c6c
+2022-04-10 23:27:02,875 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:03,603 INFO    SenderThread:6800 [sender.py:send_request_log_artifact():1002] logged artifact datasets-testing - {'id': 'QXJ0aWZhY3Q6MTEyNDg2NzYx', 'digest': '2caf61204e7bd3d0fc6172268fa8611a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE4MzYzMDk0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTEyNDc2Mzk1', 'versionIndex': 2}}, 'version': 'latest'}
+2022-04-10 23:27:03,603 DEBUG   SenderThread:6800 [sender.py:send():235] send: history
+2022-04-10 23:27:03,603 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:27:03,604 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:27:03,604 DEBUG   SenderThread:6800 [sender.py:send():235] send: history
+2022-04-10 23:27:03,604 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:27:03,605 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:27:03,880 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:27:06,896 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:08,232 DEBUG   SenderThread:6800 [sender.py:send():235] send: telemetry
+2022-04-10 23:27:08,232 DEBUG   SenderThread:6800 [sender.py:send():235] send: telemetry
+2022-04-10 23:27:08,232 DEBUG   SenderThread:6800 [sender.py:send():235] send: files
+2022-04-10 23:27:08,232 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file model-best.h5 with policy live
+2022-04-10 23:27:08,233 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: get_summary
+2022-04-10 23:27:08,250 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:27:08,251 DEBUG   SenderThread:6800 [sender.py:send():235] send: history
+2022-04-10 23:27:08,251 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:27:08,252 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:27:08,906 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:08,906 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:27:10,915 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:11,881 DEBUG   SenderThread:6800 [sender.py:send():235] send: files
+2022-04-10 23:27:11,881 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file media/graph/graph_summary_6a10cb796751ca39c4ae.graph.json with policy now
+2022-04-10 23:27:11,882 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:27:11,883 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:27:11,906 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:27:11,906 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:27:11,923 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:27:11,924 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/media/graph/graph_summary_6a10cb796751ca39c4ae.graph.json
+2022-04-10 23:27:11,924 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/media/graph
+2022-04-10 23:27:11,924 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/media
+2022-04-10 23:27:12,844 INFO    Thread-15 :6800 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmp8gj6ghy6wandb/2o84iwu1-media/graph/graph_summary_6a10cb796751ca39c4ae.graph.json
+2022-04-10 23:27:12,926 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:16,946 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:18,954 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:20,963 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:22,975 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:23,849 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:27:23,983 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/config.yaml
+2022-04-10 23:27:27,005 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:27,238 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:27:27,239 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:27:29,017 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:31,031 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:33,043 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:35,054 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:37,063 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:39,075 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:41,086 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:42,569 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:27:42,569 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:27:43,099 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:45,109 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:47,122 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:49,137 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:51,152 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:53,165 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:55,311 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:27:55,347 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:27:58,060 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:27:58,062 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:27:59,315 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:01,332 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:03,350 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:05,368 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:07,382 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:09,396 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:11,408 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:13,416 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:28:13,416 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:28:13,420 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:15,432 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:19,555 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:21,565 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:23,574 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:25,585 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:26,619 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:28:27,594 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:28,771 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:28:28,772 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:28:29,601 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:38,530 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:28:38,533 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:28:38,534 DEBUG   SenderThread:6800 [sender.py:send():235] send: history
+2022-04-10 23:28:38,534 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:28:38,535 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:28:38,535 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:28:38,535 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:28:38,536 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:28:38,537 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:28:38,652 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:28:38,652 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/model-best.h5
+2022-04-10 23:28:39,656 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:40,853 INFO    Thread-16 :6800 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmp8gj6ghy6wandb/j0iodyxq-model-best.h5
+2022-04-10 23:28:43,674 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:44,121 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:28:44,122 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:28:45,683 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:47,690 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:49,705 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:51,722 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:53,734 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:55,748 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:57,762 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:28:57,841 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:28:59,453 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:28:59,455 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:28:59,777 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:01,791 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:05,813 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:07,820 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:09,834 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:11,848 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:13,861 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:14,961 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:29:14,963 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:29:15,876 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:17,889 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:19,899 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:21,910 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:23,920 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:25,943 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:27,963 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:29,132 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:29:29,979 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:30,323 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:29:30,324 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:29:31,990 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:34,003 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:36,013 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:38,027 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:40,035 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:42,047 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:44,075 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:45,691 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:29:45,701 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:29:46,092 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:48,153 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:50,191 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:52,206 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:54,219 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:56,242 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:29:58,244 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:00,426 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:30:01,061 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:30:01,061 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:30:05,951 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:30:05,951 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:30:05,952 DEBUG   SenderThread:6800 [sender.py:send():235] send: history
+2022-04-10 23:30:05,952 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:30:05,952 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:30:05,953 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:30:05,953 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:30:05,953 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:30:05,953 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:30:06,281 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:30:06,282 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/model-best.h5
+2022-04-10 23:30:08,296 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:10,312 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:12,316 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:14,325 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:16,337 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:16,387 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:30:16,388 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:30:18,346 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:20,359 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:22,366 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:24,374 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:26,390 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:28,401 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:30,412 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:31,719 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:30:31,719 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:30:32,054 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:30:32,416 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:34,428 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:36,439 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:38,450 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:40,462 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:42,469 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:44,484 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:46,493 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:47,063 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:30:47,063 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:30:48,506 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:50,516 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:52,528 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:54,535 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:56,543 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:30:58,553 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:00,578 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:02,390 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:31:02,390 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:31:02,587 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:03,019 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:31:04,599 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:06,607 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:08,619 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:10,630 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:12,640 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:14,647 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:16,654 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:17,773 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:31:17,773 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:31:24,294 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:31:24,295 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:31:24,296 DEBUG   SenderThread:6800 [sender.py:send():235] send: history
+2022-04-10 23:31:24,296 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:31:24,298 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:31:24,299 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:31:24,299 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:31:24,300 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:31:24,300 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:31:24,697 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:31:24,698 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/model-best.h5
+2022-04-10 23:31:26,710 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:28,719 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:30,736 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:32,745 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:33,127 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:31:33,128 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:31:34,283 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:31:34,753 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:36,766 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:38,778 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:40,791 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:42,804 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:44,816 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:46,827 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:48,477 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:31:48,477 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:31:48,839 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:50,856 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:52,872 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:54,889 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:56,903 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:31:58,927 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:00,948 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:02,963 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:03,799 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:32:03,800 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:32:04,974 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:06,027 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:32:06,991 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:09,009 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:11,026 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:13,040 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:15,062 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:17,084 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:19,101 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:19,139 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:32:19,139 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:32:21,112 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:23,132 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:25,152 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:27,172 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:28,178 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:30,190 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:32,209 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:34,510 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:32:34,511 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:32:38,187 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:32:40,321 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:32:40,322 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: partial_history
+2022-04-10 23:32:40,322 DEBUG   SenderThread:6800 [sender.py:send():235] send: history
+2022-04-10 23:32:40,323 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:32:40,325 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:32:41,285 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:32:42,302 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:44,304 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:46,326 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:48,351 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:49,834 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:32:49,834 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:32:50,366 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:52,380 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:54,399 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:56,415 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:32:58,439 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:00,459 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:02,492 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:04,520 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:05,205 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-10 23:33:05,207 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: stop_status
+2022-04-10 23:33:06,545 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:08,568 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:10,050 WARNING MainThread:6800 [internal.py:wandb_internal():155] Internal process interrupt: 1
+2022-04-10 23:33:10,478 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:33:10,590 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:11,740 DEBUG   SenderThread:6800 [sender.py:send():235] send: telemetry
+2022-04-10 23:33:12,622 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:14,266 DEBUG   SenderThread:6800 [sender.py:send():235] send: exit
+2022-04-10 23:33:14,267 INFO    SenderThread:6800 [sender.py:send_exit():371] handling exit code: 255
+2022-04-10 23:33:14,273 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:14,273 INFO    SenderThread:6800 [sender.py:send_exit():373] handling runtime: 381
+2022-04-10 23:33:14,274 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:33:14,275 INFO    SenderThread:6800 [sender.py:send_exit():379] send defer
+2022-04-10 23:33:14,275 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:14,276 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:14,276 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 0
+2022-04-10 23:33:14,277 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:14,277 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-04-10 23:33:14,277 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 1
+2022-04-10 23:33:14,278 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:14,278 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 1
+2022-04-10 23:33:14,345 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:14,345 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-04-10 23:33:14,345 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 2
+2022-04-10 23:33:14,346 DEBUG   SenderThread:6800 [sender.py:send():235] send: stats
+2022-04-10 23:33:14,346 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:14,346 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 2
+2022-04-10 23:33:14,346 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:14,346 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-04-10 23:33:14,346 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 3
+2022-04-10 23:33:14,347 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:14,347 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 3
+2022-04-10 23:33:14,347 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:14,347 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-04-10 23:33:14,347 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 4
+2022-04-10 23:33:14,347 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:14,348 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 4
+2022-04-10 23:33:14,348 DEBUG   SenderThread:6800 [sender.py:send():235] send: summary
+2022-04-10 23:33:14,349 INFO    SenderThread:6800 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-10 23:33:14,349 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:14,349 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-04-10 23:33:14,349 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 5
+2022-04-10 23:33:14,349 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:14,349 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 5
+2022-04-10 23:33:14,350 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:14,350 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-04-10 23:33:14,539 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:14,631 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:14,631 INFO    Thread-7  :6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:33:14,906 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 6
+2022-04-10 23:33:14,906 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:14,907 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:14,907 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 6
+2022-04-10 23:33:14,907 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:14,907 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-04-10 23:33:14,907 INFO    SenderThread:6800 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-04-10 23:33:15,010 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:15,639 INFO    SenderThread:6800 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/config.yaml
+2022-04-10 23:33:15,640 INFO    SenderThread:6800 [dir_watcher.py:finish():313] scan: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files
+2022-04-10 23:33:15,641 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/requirements.txt requirements.txt
+2022-04-10 23:33:15,641 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log output.log
+2022-04-10 23:33:15,642 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/config.yaml config.yaml
+2022-04-10 23:33:15,651 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json wandb-summary.json
+2022-04-10 23:33:15,656 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/conda-environment.yaml conda-environment.yaml
+2022-04-10 23:33:15,661 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-metadata.json wandb-metadata.json
+2022-04-10 23:33:15,661 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/model-best.h5 model-best.h5
+2022-04-10 23:33:15,666 INFO    SenderThread:6800 [dir_watcher.py:finish():327] scan save: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/media/graph/graph_summary_6a10cb796751ca39c4ae.graph.json media/graph/graph_summary_6a10cb796751ca39c4ae.graph.json
+2022-04-10 23:33:15,667 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 7
+2022-04-10 23:33:15,667 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:15,667 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:15,667 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 7
+2022-04-10 23:33:15,667 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:15,668 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-04-10 23:33:15,668 INFO    SenderThread:6800 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-10 23:33:15,773 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:15,773 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:15,881 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:15,881 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:15,988 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:15,993 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,100 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,100 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,203 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,204 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,310 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,310 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,416 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,416 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,494 INFO    Thread-17 :6800 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/requirements.txt
+2022-04-10 23:33:16,518 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,518 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,522 INFO    Thread-19 :6800 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/config.yaml
+2022-04-10 23:33:16,525 INFO    Thread-18 :6800 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/output.log
+2022-04-10 23:33:16,527 INFO    Thread-21 :6800 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/conda-environment.yaml
+2022-04-10 23:33:16,529 INFO    Thread-20 :6800 [upload_job.py:push():137] Uploaded file /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/files/wandb-summary.json
+2022-04-10 23:33:16,625 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,625 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,731 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,732 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,839 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,840 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:16,948 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:16,948 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,053 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,054 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,160 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,160 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,263 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,264 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,371 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,372 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,478 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,478 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,586 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,587 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,696 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,696 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,805 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,806 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:17,916 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:17,917 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,025 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:18,026 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,135 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:18,136 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,243 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:18,243 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,271 INFO    Thread-22 :6800 [upload_job.py:push():137] Uploaded file /var/folders/w7/_vsgqkws5y93szpqyrb2mqw80000gn/T/tmp8gj6ghy6wandb/1ymu5eah-model-best.h5
+2022-04-10 23:33:18,351 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:18,352 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,460 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:18,461 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,477 INFO    Thread-6  :6800 [sender.py:transition_state():392] send defer: 8
+2022-04-10 23:33:18,478 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:18,478 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 8
+2022-04-10 23:33:18,478 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:18,478 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-04-10 23:33:18,569 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:18,711 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 9
+2022-04-10 23:33:18,711 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,712 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:18,713 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 9
+2022-04-10 23:33:18,713 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:18,713 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-04-10 23:33:18,713 INFO    SenderThread:6800 [sender.py:transition_state():392] send defer: 10
+2022-04-10 23:33:18,714 DEBUG   SenderThread:6800 [sender.py:send():235] send: final
+2022-04-10 23:33:18,714 DEBUG   SenderThread:6800 [sender.py:send():235] send: footer
+2022-04-10 23:33:18,715 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: defer
+2022-04-10 23:33:18,715 INFO    HandlerThread:6800 [handler.py:handle_request_defer():164] handle defer: 10
+2022-04-10 23:33:18,715 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: defer
+2022-04-10 23:33:18,715 INFO    SenderThread:6800 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-04-10 23:33:18,821 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-10 23:33:18,822 DEBUG   SenderThread:6800 [sender.py:send_request():249] send_request: poll_exit
+2022-04-10 23:33:18,823 INFO    SenderThread:6800 [file_pusher.py:join():150] waiting for file pusher
+2022-04-10 23:33:19,287 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: sampled_history
+2022-04-10 23:33:19,292 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: get_summary
+2022-04-10 23:33:19,294 DEBUG   HandlerThread:6800 [handler.py:handle_request():141] handle_request: shutdown
+2022-04-10 23:33:19,295 INFO    HandlerThread:6800 [handler.py:finish():790] shutting down handler
+2022-04-10 23:33:19,720 INFO    WriterThread:6800 [datastore.py:close():281] close: /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220410_232651-rkptxthr/run-rkptxthr.wandb
+2022-04-10 23:33:20,181 INFO    SenderThread:6800 [sender.py:finish():1107] shutting down sender
+2022-04-10 23:33:20,182 INFO    SenderThread:6800 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-10 23:33:20,182 INFO    SenderThread:6800 [file_pusher.py:join():150] waiting for file pusher
+2022-04-10 23:33:20,185 INFO    MainThread:6800 [internal.py:handle_exit():82] Internal process exited

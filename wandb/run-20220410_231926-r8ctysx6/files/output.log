@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "test/test_model.py", line 59, in <module>
+    artifact.add_dir(['folder-datasets'])
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/site-packages/wandb/sdk/wandb_artifacts.py", line 390, in add_dir
+    if not os.path.isdir(local_path):
+  File "/Users/phamvanmanh/opt/anaconda3/envs/tensor_env/lib/python3.8/genericpath.py", line 42, in isdir
+    st = os.stat(s)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not list

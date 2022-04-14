@@ -1,0 +1,24 @@
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_setup.py:_flush():75] Loading settings from /Users/phamvanmanh/.config/wandb/settings
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_setup.py:_flush():75] Loading settings from /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/settings
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'test/test_model.py', 'program': 'test/test_model.py'}
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_init.py:_log_setup():438] Logging user logs to /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220412_224200-2jxzwg1s/logs/debug.log
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_init.py:_log_setup():439] Logging internal logs to /Users/phamvanmanh/Documents/GitHub/sentiment-analysis-vietnamese/wandb/run-20220412_224200-2jxzwg1s/logs/debug-internal.log
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_init.py:init():472] calling init triggers
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [wandb_init.py:init():525] starting backend
+2022-04-12 22:42:00,884 INFO    MainThread:28964 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-04-12 22:42:00,901 INFO    MainThread:28964 [backend.py:ensure_launched():219] starting backend process...
+2022-04-12 22:42:00,924 INFO    MainThread:28964 [backend.py:ensure_launched():224] started backend process with pid: 28984
+2022-04-12 22:42:00,925 INFO    MainThread:28964 [wandb_init.py:init():534] backend started and connected
+2022-04-12 22:42:00,931 INFO    MainThread:28964 [wandb_init.py:init():598] updated telemetry
+2022-04-12 22:42:00,994 INFO    MainThread:28964 [wandb_init.py:init():629] communicating run to backend with 30 second timeout
+2022-04-12 22:42:02,213 INFO    MainThread:28964 [wandb_run.py:_on_init():1922] communicating current version
+2022-04-12 22:42:02,618 INFO    MainThread:28964 [wandb_run.py:_on_init():1926] got version response 
+2022-04-12 22:42:02,619 INFO    MainThread:28964 [wandb_init.py:init():660] starting run threads in backend
+2022-04-12 22:42:07,114 INFO    MainThread:28964 [wandb_run.py:_console_start():1896] atexit reg
+2022-04-12 22:42:07,114 INFO    MainThread:28964 [wandb_run.py:_redirect():1769] redirect: SettingsConsole.REDIRECT
+2022-04-12 22:42:07,115 INFO    MainThread:28964 [wandb_run.py:_redirect():1774] Redirecting console.
+2022-04-12 22:42:07,117 INFO    MainThread:28964 [wandb_run.py:_redirect():1830] Redirects installed.
+2022-04-12 22:42:07,117 INFO    MainThread:28964 [wandb_init.py:init():685] run started, returning control to user process
