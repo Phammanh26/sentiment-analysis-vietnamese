@@ -39,9 +39,8 @@ def test_speed_model():
 if __name__ == '__main__':
     wandb.login()
     project_name ="my-awesome-hello-1111"
-    wandb.init(project = project_name) 
-   
-    wandb.run.name = author + wandb.run.id
+    wandb.init(project = project_name, tags =[author, "cnn_model"]) 
+    wandb.run.name =  wandb.run.id
 
     #setup wandb
     run = wandb.init(project=project_name,tags=["debug", "push", "phammanh", "dataversion1"])
