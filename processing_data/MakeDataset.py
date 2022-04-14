@@ -5,12 +5,11 @@ from tensorflow.keras.preprocessing.text import one_hot
 import numpy as np
 import pandas as pd
 from collections import Counter
-
-
+import os
 class MakeDataset:
     def __init__(self, config, wandb):
-       
-        self.folder = config['folder-datasets']
+  
+        self.folder = os.getcwd() + config['folder-datasets']
         self.f_train = config['train']
         self.f_test = config['test']
         self.vocabsize = config['vocabsize']
