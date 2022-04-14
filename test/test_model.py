@@ -11,6 +11,7 @@ from processing_data.MakeDataset import MakeDataset
 from model_building.CNN import CNN
 
 os.environ["WANDB_API_KEY"] = os.getenv('WANDB_API_KEY')
+author = os.getenv('AUTHOR')
 
 def test_predict_model():
     #f1_score
@@ -40,6 +41,7 @@ if __name__ == '__main__':
     project_name ="my-awesome-hello-1111"
     wandb.init(project = project_name) 
    
+    wandb.run.name = author + wandb.run.id
 
     #setup wandb
     run = wandb.init(project=project_name,tags=["debug", "push", "phammanh", "dataversion1"])
