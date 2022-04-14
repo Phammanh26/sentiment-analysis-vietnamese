@@ -55,7 +55,7 @@ if __name__ == '__main__':
         
     artifact = wandb.Artifact('datasets-testing', type='my_dataset')
     
-    artifact.add_dir(config['folder-datasets'])
+    artifact.add_dir(path + config['folder-datasets'])
     wandb.log_artifact(artifact)
     dataset = MakeDataset(config, wandb)
    
