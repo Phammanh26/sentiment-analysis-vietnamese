@@ -1,5 +1,5 @@
 from SentimentModel import  SentimentModel
-from processing.CleanData import CleanData
+from processing_data.CleanData import CleanData
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import one_hot
 import numpy as np
