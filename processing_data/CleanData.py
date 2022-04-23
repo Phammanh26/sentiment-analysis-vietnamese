@@ -5,11 +5,6 @@ from pyvi import ViTokenizer
 class CleanData:
     def __init__(self) -> None:
         pass 
-    def add(self, text):
-        self.sentence = text
-    
-    # def addlist(self, list_texts):
-    #     self.list_texts = list_texts
     
     def processing_list_text(self, list_texts):
         print('start processing list text, size: {}'.format(len(list_texts)))

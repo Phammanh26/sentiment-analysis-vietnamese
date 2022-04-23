@@ -1,4 +1,8 @@
-URL_ROOT = ''
+CURRENT_HREF = window.location.href
+PATHNAME = window.location.pathname
+var urlpath  = CURRENT_HREF.replace(PATHNAME,'');
+URL_ROOT = urlpath
+
 
 function get_input_text(id_input){
     var text = document.getElementById(id_input).value
@@ -27,7 +31,7 @@ function get_result_predict(text){
 }
 function predict(text) {
     var content = { "text": text}
-    var api = URL_ROOT + "sentiment-analyst/predict"
+    var api = URL_ROOT + "/sentiment-analyst/predict"
     var type="POST"
     return ajax_api(content,api,  type)
 

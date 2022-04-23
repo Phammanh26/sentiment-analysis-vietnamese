@@ -1,0 +1,24 @@
+# deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentiment-app
+  labels:
+    type: restapi
+spec:
+  selector: 
+    matchLabels:
+      app: sentiment-app
+  replicas: 1
+  template:
+    metadata:
+      name: sentiment-app
+      labels:
+        app: sentiment-app
+    spec:
+      containers:
+        - name: sentiment-app
+          image: pham2604/sentiment-analysis-vietnamese
+          ports:
+            - containerPort: 5000

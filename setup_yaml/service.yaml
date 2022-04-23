@@ -1,0 +1,14 @@
+# service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: services-sentiment-project
+spec:
+  type: LoadBalancer
+  selector:
+    app: sentiment-app
+  ports:
+    - protocol: "TCP"
+      port: 8030
+      targetPort: 5000

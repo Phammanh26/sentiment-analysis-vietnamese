@@ -21,8 +21,9 @@ app = Flask(__name__)
 def predict():
     content = request.json
     text = content['text']
-    clean_data = CleanData(text)
-    text_clean = clean_data.preprocess_sentence()
+    clean_data = CleanData()
+  
+    text_clean = clean_data.preprocess_sentence(text)
     onehot_repr=[one_hot(words,VOCABSIZE)for words in [text_clean]]
     embedded_docs=pad_sequences(onehot_repr,padding='post',maxlen=MAX_SEQUENCE_LENGTH)
     
